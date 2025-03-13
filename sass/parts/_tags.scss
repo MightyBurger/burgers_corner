@@ -1,0 +1,29 @@
+.tags {
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    font-family: var(--text-font);
+  }
+
+  a:hover {
+    color: var(--hover-color);
+    background-color: var(--primary-color);
+  }
+
+  a::before {
+    content: "#";
+    display: inline;
+    white-space: nowrap !important;
+  }
+}
+
+.post-tag{
+  margin-right: 12px;
+}
