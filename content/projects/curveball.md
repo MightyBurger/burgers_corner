@@ -9,7 +9,7 @@ read_time = true
 # link_to = "https://github.com/MightyBurger/curveball"
 +++
 
-Curveball is my curve generator tool for [Neverball](https://neverball.org/).
+Curveball is my curve generator tool for [Neverball].
 
 ![curveball logo](/projects/curveball.png)
 
@@ -45,7 +45,7 @@ Imagine you form a lump like this: first, let your lump take up the entire unive
 
 It's bizarre, but there's technical reasons why it is done this way, such as making the collision code easier.
 
-Now we need some way to describe these shapes in a text file. Neverball uses the [Quake map format](https://quakewiki.org/wiki/Quake_Map_Format), where each "cut" is defined by three points in the plane. These points have to be in a certain order; if you get it wrong, you might accidentally cut away the wrong half of the universe!
+Now we need some way to describe these shapes in a text file. Neverball parses the [Quake map format](https://quakewiki.org/wiki/Quake_Map_Format), where each "cut" is defined by three points in the plane. These points have to be in a certain order; if you get it wrong, you might accidentally cut away the wrong half of the universe!
 
 If you're curious, here's an example of the data for a cube:
 ```QUAKE
@@ -126,3 +126,5 @@ In addition to an **Extrusion**, curveball can also generate three other curves 
 It's time to use this tool! I have some levels I paused because I needed a certain curve shape. Now I can go forward and make some fun levels.
 
 I'm excited to see what the Neverball community comes up with using this tool.
+
+[Neverball]: https://neverball.org/
