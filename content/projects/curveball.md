@@ -81,6 +81,8 @@ Using `chull` made it easy to generate these curves just by defining the vertice
 
 I discovered a really neat abstraction for generating these curves. It was inspired by mechanical CAD software like [Solidworks](https://www.solidworks.com/). The idea is you *define a 2D profile* that you *extrude into 3D space*.
 
+In Curveball, the 2D profile is copied multiple times along the path. Curveball then takes all the vertices in two adjacent faces and runs it through `chull` to produce a brush. Repeat until you reach the end of the path, and the curve is made.
+
 This feels really natural to generate shapes with, and it opens up a world of options. Every combination of *profile* and *path* makes a new curve. Some are really weird and probably aren't useful, but there's a lot of interesting, useful curves you can make with it. If I code up $m$ different profiles and $n$ different paths, now I can produce $m \cdot n$ different curves! Manually coding every permutation would have taken ages.
 
 ## Orienting
