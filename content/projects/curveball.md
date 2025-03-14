@@ -111,7 +111,7 @@ where
     PTH: Path,
 ```
 
-Not too bad! A `Profile` is something that produces a `Vec<Brush>`, possibly varying along the path. A `Path` is something that produces a point and a Frenet Frame that varies to produce the path.
+Not too bad! A `Profile` is something that produces a vector of points in a plane, possibly varying along the path. A `Path` is something that produces a point and a Frenet Frame that varies to produce the path.
 
 ## Exceptions to the rule
 
@@ -128,5 +128,7 @@ In addition to an **Extrusion**, curveball can also generate three other curves 
 It's time to use this tool! I have some levels I paused because I needed a certain curve shape. Now I can go forward and make some fun levels.
 
 I'm excited to see what the Neverball community comes up with using this tool.
+
+*Note: I've made some small edits to this post to fix technical details.*
 
 [Neverball]: https://neverball.org/
