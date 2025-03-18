@@ -22,7 +22,7 @@ function updateItemToggleTheme() {
     if (darkModeStyle) {
         darkModeStyle.disabled = (mode === "light");
     }
-    
+
     const sunIcon = document.getElementById("sun-icon");
     const moonIcon = document.getElementById("moon-icon");
     if (sunIcon && moonIcon) {
@@ -42,11 +42,11 @@ function updateItemToggleTheme() {
 
 function getSavedTheme() {
     let currentTheme = localStorage.getItem("theme-storage");
-    if(!currentTheme) {
+    if (!currentTheme) {
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             currentTheme = "dark";
         } else {
-            currentTheme = "light";
+            currentTheme = "dark";
         }
     }
 

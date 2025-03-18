@@ -1,7 +1,7 @@
 {% import "macros/macros.html" as post_macros %}
 
 <!DOCTYPE html>
-<html lang="en" class="dark light">
+<html lang="en" class="dark">
 
 {% include "partials/header.html" %}
 
@@ -11,13 +11,13 @@
 
         {# Post page is the default #}
         {% block main_content %}
-            Nothing here?!
+        Nothing here?!
         {% endblock main_content %}
 
-        {% if page.extra.comment is defined  %}
-            {% set show_comment = page.extra.comment %}
+        {% if page.extra.comment is defined %}
+        {% set show_comment = page.extra.comment %}
         {% else %}
-            {% set show_comment = false %}
+        {% set show_comment = false %}
         {% endif %}
 
         {% if show_comment %}
